@@ -1,0 +1,47 @@
+<h1>Sample Data Selector</h1>
+
+<p>This component gets transaction data from the database.</p>
+<br/>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field>
+        <input matInput [matDatepicker]="start" placeholder="Start Date">
+        <mat-datepicker-toggle matSuffix [for]="start"></mat-datepicker-toggle>
+        <mat-datepicker #start></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <input matInput [matDatepicker]="end" placeholder="End Date">
+        <mat-datepicker-toggle matSuffix [for]="end"></mat-datepicker-toggle>
+        <mat-datepicker #end></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <button mat-raised-button>Click me!</button>
+    </div>
+  </div>
+</div>
+
+
+<!--<table class='table table-striped' *ngIf="forecasts">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Temp. (C)</th>
+      <th>Temp. (F)</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let forecast of forecasts">
+      <td>{{ forecast.dateFormatted }}</td>
+      <td>{{ forecast.temperatureC }}</td>
+      <td>{{ forecast.temperatureF }}</td>
+      <td>{{ forecast.summary }}</td>
+    </tr>
+  </tbody>
+</table>-->
